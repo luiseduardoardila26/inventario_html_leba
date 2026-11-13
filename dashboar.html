@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iniciar sesion del inventario ADSO</title>
+    <!--css de bootstrap 5.2.2 desde url predeterminada-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--libreria de iconos en bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet"><!--llama a los estilos peronalizados-->
+</head>
+<body class="bg-body-tertiary">
+    <!--menu lateral-->
+    <!--offcanvas en pantallas menores al lg es un panel oculto que se desliza-->
+    <!--desde el lg se muestra norma. offcanvas-start lo hace salir por la izquierda. sidebar es muestra la clase el id usa el boton que lo abre-->
+    <aside class="offcanvas-start sidebar" tabindex="-1" id="menuLateral" arial-labelledby="tituloMenu">
+        <!--encabezado de el panel; bootstrap solo lo muestra en celular-->
+        <div class="offcanvas-header border-bottom border-secondary">
+            <!--nombre del sistema en el panel movil-->
+            <h5 class="offcanvas-title" id="tituloMenu"><i class="bi bi-shop me-2"></i>tienda sena</h5>
+            <!--button x blanco de cierre de panel -->
+            <button type="button" class="btn-close btn-close-withe" data-bs-dismiss="offcanvas" data-bs-target="#menulateral" arial-labeL="cerrar menu"></button>
+        </div>
+        <!--cuerpo del menu flexbox em columan para apilar el logo enlaces y boton de salida -->
+        <div class="offcanvas-body d-flex-column p-3">
+            <!--logo solo se ve en computador -->
+            <a href="dashboar.html" class="d-none d-lg-flex align-items-center mb-3 text-white text-decoration-none fs-5 fw-bold">
+                <!--icono verde y nombre-->
+                <i class="bi bi-shop me-2 text-sena"></i>tienda sena
+                <!--cierra logo -->
+            </a>
+        </div>
+    </aside>
+
+</body>
