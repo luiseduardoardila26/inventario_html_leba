@@ -27,19 +27,19 @@
             <!--logo solo se ve en computador -->
             <a href="dashboard.html" class="d-none d-lg-flex align-items-center mb-3 text-white text-decoration-none fs-5 fw-bold">
                 <!--icono verde y nombre-->
-                <i class="bi bi-shop me-2 text-sena"></i>tienda sena
+                <i class="bi bi-shop me-2 text-sena">tienda sena</i>
                 <!--cierra logo -->
             </a>
-        <!--lista de navegacion en columna (flex-column) .nav-pills de forma de pildora al enlace activo mb-auto empuja lo que sigue hast ale fondo-->
+        <!--lista de navegacion en columna (flex-column) .nav-pills de forma de pildora al enlace activo mb-auto empuja lo que sigue hasta el fondo-->
         <ul class="nav nav-pills flex-column mb-auto">
-            <!--Enlace al dashboard active lo resalta en verde y aria -current="page" la pafgina actual en cada modulo el active pasa si propio enlace-->
+            <!--Enlace al dashboard active lo resalta en verde y aria -current="page" la pagina actual en cada modulo el active pasa si propio enlace-->
             <li class="nav-item"><a href="dashboard.html" class="nav-link active" aria-current="page"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a></i>
             </li>
             <!--Enlace a modulo usuario-->
             <li class="nav-item"><a href="usuario.html" class="nav-link"><i class="bi bi-people me-2"></i>usuarios</a></i>
                 <!--link categoria-->
                 <li class="nav-item"><a href="categorias.html" class="nav-link"><i class="bi bi-tags me-2"></i>categorias</a></li>
-                <li class="nav-item"><a href="subcategorias.html" class="nav-link"><i class="bi bi-diagram 3 me-2"></i>subcategoria</a></li>
+                <li class="nav-item"><a href="subcategorias.html" class="nav-link"><i class="bi bi-diagram-3 me-2"></i>subcategoria</a></li>
                 <li class="nav-item"><a href="productos.html" class="nav-link"><i class="bi bi-box-seam me-2"></i>productos</a></li>
             <ul>
                 <hr>
@@ -106,7 +106,7 @@
                         <!--cuerpo con flexbox icono y texto a lados separados -->
                         <div class="card-body d-flex align-items-center gap-3">
                             <!--cuadro de icono fondo verde suave icono verde-->
-                            <div class="icono-kpi bg-succes-subtitle text-succes"><i class="bi bi-people"></i></div>
+                            <div class="icono-kpi bg-success-subtle text-success"><i class="bi bi-people"></i></div>
                             <div>
                                 <!--nombre del indicador-->
                                 <p class="text-secondary small mb-0">usuarios</p>
@@ -126,17 +126,59 @@
                         <!--cuerpo con flexbox icono y texto a lados separados -->
                         <div class="card-body d-flex align-items-center gap-3">
                             <!--cuadro de icono fondo verde suave icono verde-->
-                            <div class="icono-kpi bg-succes-subtitle text-succes"><i class="bi bi-people"></i></div>
+                            <div class="icono-kpi bg-primary-subtle text-primary"><i class="bi bi-tags"></i></div>
                             <div>
                                 <!--nombre del indicador-->
-                                <p class="text-secondary small mb-0">usuarios</p>
+                                <p class="text-secondary small mb-0">categorias</p>
                                 <!--valor del ejemplo del indicador-->
-                                <h2 class="h4 mb-0">24</h2>
+                                <h2 class="h4 mb-0">6</h2>
                                 <!--cierre del bloque de texto-->
                             </div>
                             <!--link estira el elnase sobre toda la targeta  un click en cualquier parte lleva al modulo-->
-                            <a href="usuarios.html" class="stretched-link" aria-label="ir a usuarios"></a>
-            </div>
+                            <a href="categorias.html" class="stretched-link" aria-label="ir a categorias"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--columna 3-->
+                <div class="col">
+                    <!--targeta con nuestra clase franja verde y animacion-->
+                    <div class="card tarjetas-kpi shadow-sm h-100">
+                        <!--cuerpo con flexbox icono y texto a lados separados -->
+                        <div class="card-body d-flex align-items-center gap-3">
+                            <!--cuadro de icono fondo verde suave icono verde-->
+                            <div class="icono-kpi bg-warning-subtle text-warning-emphasis"><i class="bi bi-diagram-3"></i></div>
+                            <div>
+                                <!--nombre del indicador-->
+                                <p class="text-secondary small mb-0">subcategorias</p>
+                                <!--valor del ejemplo del indicador-->
+                                <h2 class="h4 mb-0">7</h2>
+                                <!--cierre del bloque de texto-->
+                            </div>
+                            <!--link estira el elnase sobre toda la targeta  un click en cualquier parte lleva al modulo-->
+                            <a href="subcategorias.html" class="stretched-link" aria-label="ir a subcategorias"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--columna 4-->
+                <div class="col">
+                    <!--targeta con nuestra clase franja verde y animacion-->
+                    <div class="card tarjetas-kpi shadow-sm h-100">
+                        <!--cuerpo con flexbox icono y texto a lados separados -->
+                        <div class="card-body d-flex align-items-center gap-3">
+                            <!--cuadro de icono fondo verde suave icono verde-->
+                            <div class="icono-kpi bg-danger-subtle text-danger"><i class="bi bi-box-seam"></i></div>
+                            <div>
+                                <!--nombre del indicador-->
+                                <p class="text-secondary small mb-0">productos</p>
+                                <!--valor del ejemplo del indicador-->
+                                <h2 class="h4 mb-0">67</h2>
+                                <!--cierre del bloque de texto-->
+                            </div>
+                            <!--link estira el elnase sobre toda la targeta  un click en cualquier parte lleva al modulo-->
+                            <a href="productos.html" class="stretched-link" aria-label="ir a productos"></a>
+                        </div>
+                    </div>
+                </div>
         </main>
     </div>
 </body>
