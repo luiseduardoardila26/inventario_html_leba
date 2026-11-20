@@ -25,7 +25,7 @@
         <!--cuerpo del menu flexbox em columan para apilar el logo enlaces y boton de salida -->
         <div class="offcanvas-body d-flex-column p-3">
             <!--logo solo se ve en computador -->
-            <a href="dashboar.html" class="d-none d-lg-flex align-items-center mb-3 text-white text-decoration-none fs-5 fw-bold">
+            <a href="dashboard.html" class="d-none d-lg-flex align-items-center mb-3 text-white text-decoration-none fs-5 fw-bold">
                 <!--icono verde y nombre-->
                 <i class="bi bi-shop me-2 text-sena"></i>tienda sena
                 <!--cierra logo -->
@@ -45,13 +45,39 @@
                 <hr>
                 <!--boton que se vuelve al login asi se cierra la sesion-->
                 <a href="index.html" class="btn btn-outline-light btn-sm"><i class="bi bi-box-arrow-left me-1"></i>cerra sesion</a>
+                <!--cierra el cuerpo del menu-->
             
     
     </aside>
     <body>
 
         </div>
+        <!--cierra el menu lateral-->
     </aside>
+    <!--zona derecha del dashboard-->
+    <div class="contenido">
 
+        <!--Barra superior-->
+        <!--Baara blanca con borde inferior, la deja pegada arriba al hacer scrool-->
+        <nav class="navbar bg white border-bottom px3 sticky-top">
+            <!--boton para abrir el menu en celular lo oculta el computador el menu siempre se ve-->
+            <button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral" aria-label="Abrir menu">
+                <!--icono de menu hamburguesa-->
+                <i class="bi bi-list"></i>
+            </button>
+            <!--texto de la barra se oculta en celulares muy pequeños-->
+            <span class="navbar-text fw-semibold d-none d-sm-inline">Panel de administracion</span>
+            <!--menu desplegable del ususario lo empuja a la derecha-->
+
+            <div class="dropdown ms-auto">
+                <!--boton que abre el desplegable-->
+                <button class="btn btn-light dropdown-toggle d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <!--icono de usuario-->
+                    <i class="bi bi-person-circle fs-5"></i>
+                    <!--nombre de usuario visible en tablet-->
+                    <span class="d-none d-md-inline">Admin Sena</span>
+                </button>
+            </div>
+        </nav>
+    </div>
 </body>
-<!DOCTYPE html>
